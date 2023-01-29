@@ -21,9 +21,9 @@ for (const file of eventFiles) {
 client.on('ready', async () => {
 
 	const data = await rest.put(
-			Routes.applicationGuildCommands(client.user.id, "896475140039278592"),
+			Routes.applicationGuildCommands(client.user.id, "896475140039278592"), // server id
 			{ body: isCommands },
 		);
-    console.log(`(*) ${data.length} adet komut yüklendi.`)
+    console.log(`(*) ${data.length} loaded commands.`)
 
 })
